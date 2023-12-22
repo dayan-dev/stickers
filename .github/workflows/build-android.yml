@@ -19,5 +19,10 @@ jobs:
         distribution: 'adopt'
         java-version: '11'
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
     - name: Build with Gradle
       run: ./Android/gradlew build
